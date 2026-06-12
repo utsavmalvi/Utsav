@@ -38,10 +38,13 @@ python3 -m http.server 8000
 
 Any static host works. Easiest options:
 
-- **GitHub Pages** — push to the repo, then enable Pages (Settings → Pages →
-  deploy from branch, root `/`).
 - **Netlify / Vercel / Cloudflare Pages** — point it at the repo, no build
-  command needed, publish directory is the project root.
+  command needed, publish directory is the project root. With Netlify you can
+  also just drag-and-drop the project folder at https://app.netlify.com/drop.
+- **GitHub Pages** — a ready-made workflow exists at
+  `.github/workflows/deploy-pages.yml`. First enable Pages
+  (Settings → Pages → Source: "GitHub Actions"), then run the
+  "Deploy to GitHub Pages" workflow from the Actions tab.
 
 ## Customize
 

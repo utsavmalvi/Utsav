@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
+# NOTE: GitHub Pages must be enabled first (repo Settings -> Pages ->
+# Source: "GitHub Actions"), then trigger this workflow manually from the
+# Actions tab. Once Pages is enabled you can also re-add a push trigger.
 on:
-  push:
-    branches: [claude/optimistic-babbage-izctus, main]
   workflow_dispatch:
 
 permissions:
